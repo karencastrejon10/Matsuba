@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -77,8 +78,48 @@
             </div>
          
         </div>
-        <script src="script.js"></script>
-        <img src="" alt="">
+        <br>
+        <br>
     </section>
+    <!--<section class="Reservas">
+        <h2 class="Reservas__titulo">RESERVACIONES</h2>
+        <form action="" class="reservas-form">
+            <label for="">Fecha y hora:
+                <input type="date" required>
+            </label>
+            <label >
+                Numero de personas:
+                <input type="number" min="1" max="20" required>
+            </label>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>-->
+    <section class="Reserva">
+        <h2>Reserva ahora</h2>
+        <br>
+        <div class="reservacion_separar">
+        <form class="form-reseva">
+       
+            <div class="form-element">
+                <span class="material-icons">group</span>
+                <input type="number" min="1" max="20" placeholder="Numero personas" required>
+            </div>
+                 <div class="form-element1">
+                <input type="date" required>
+                <input type="time">
+            </div>
+            <div class="form-element1">
+                <button class="btn"><a href="#">Reserva tu mesa</a></button>
+            </div>
+        </form>
+        </div>
+        <br>
+
+        <div class="reservacion_separar">
+            <h2>Ubicacion</h2>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.552971384178!2d-99.20207337056853!3d19.43171149591158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021d39899df5%3A0x6b1eaf44b36693c3!2sAv%20Moliere%2063%2C%20Polanco%2C%20Polanco%20II%20Secc%2C%20Miguel%20Hidalgo%2C%2011540%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1767585457941!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
