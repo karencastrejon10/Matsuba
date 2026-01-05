@@ -168,6 +168,64 @@ video{
     transition: 0.3s;
 }
 
+.Reserva{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+.form-reseva{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-element{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-element input{
+    width: 44%;
+    padding: 8px 15px 8px 40px;
+    border-radius: 15px;
+    
+}
+.form-element .material-icons{
+    position: absolute;
+    left: calc(37% - 120px); /* ajusta según tu diseño */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    pointer-events: none;
+}
+
+
+.form-element1 input{
+    width: 22%;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.form-element1 button{
+    width: 44%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+.form-element1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.form-element1 a:hover{
+    border-bottom: 1px solid #ccc;
+}
+.mapa{
+    width: 50%;
+}
+
+
 @media (max-width: 768px) {
 
     .nav_bar{
@@ -212,6 +270,28 @@ video{
     .item-2 p{
         font-size: 16px;
     }
+    .form-reseva{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-element input{
+    width: 62%;
+    padding: 8px 15px 8px 40px;
+    border-radius: 15px;
+    
+}
+.form-element .material-icons{
+    position: absolute;
+    left: calc(50% - 120px); /* ajusta según tu diseño */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    pointer-events: none;
+}
+.form-element1 input{
+    width: 30%;   
+}
 }
 
 
