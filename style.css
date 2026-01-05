@@ -12,7 +12,9 @@ border-right:
 border-bottom:
 }
 */
-
+html {
+  scroll-behavior: smooth;
+}
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 *{
     margin: 0;
@@ -283,7 +285,7 @@ video{
 }
 .form-element .material-icons{
     position: absolute;
-    left: calc(50% - 31% + 12px);
+    left: calc(50% - 31% + 12px);/*Partimos de la mitad osea el 50%, le quitamos la mitad al input 62/2 y agregamos un pequeño margen del 12%*/
     top: 50%;
     transform: translateY(-50%);
     color: #555;
