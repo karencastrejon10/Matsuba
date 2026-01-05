@@ -193,7 +193,7 @@ video{
 }
 .form-element .material-icons{
     position: absolute;
-    left: calc(37% - 120px); /* ajusta según tu diseño */
+    left: calc(37% - 120px); /* ajusta el icono */
     top: 50%;
     transform: translateY(-50%);
     color: #555;
@@ -283,7 +283,7 @@ video{
 }
 .form-element .material-icons{
     position: absolute;
-    left: calc(50% - 120px); /* ajusta según tu diseño */
+    left: calc(50% - 31% + 12px);
     top: 50%;
     transform: translateY(-50%);
     color: #555;
@@ -292,6 +292,13 @@ video{
 .form-element1 input{
     width: 30%;   
 }
+.form-element1 button{
+    width: 50%;
+}
+.mapa{
+    width: 80%;
+}
+
 }
 
 
