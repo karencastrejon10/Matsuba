@@ -50,6 +50,13 @@ body{
 .nav_bar img{
     width: 70px;
 }
+.menu-toggle{
+    display: none;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 15px;
+}
 .nav_bar ul{
     position: relative;
     top: 20px;
@@ -163,18 +170,32 @@ video{
 
 @media (max-width: 768px) {
 
-    /* NAV */
     .nav_bar{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-    
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .list{
+        display: none;
+        width: 100%;
+        background-color: #000;
+    }
+
+    .list.active{
+        display: block;
     }
 
     .list__element{
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        margin: 10px 0;
+        gap: 15px;
+        padding: 20px 0;
+        margin: 0;
     }
 
     /* SECTION GRID */
@@ -182,14 +203,6 @@ video{
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .section video{
-        left: 0;
-    }
-
-    .item-2{
-        top: 0;
     }
 
     .item-2 h2{
@@ -200,4 +213,5 @@ video{
         font-size: 16px;
     }
 }
+
 
