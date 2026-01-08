@@ -226,7 +226,75 @@ video{
 .mapa{
     width: 50%;
 }
+.frase{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+  align-items: center;
+  gap: 40px;
+  padding: 80px 40px;
+  background-color: #000;
+  color: #fff;
+}
 
+.frase_element{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.frase_element h2{
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.frase_element p{
+  font-size: 25px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.element_img{
+    width: 80%
+}
+.element_button{
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+ 
+}
+
+   
+
+.element_button button {
+     background: transparent;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative; /* CLAVE */
+  padding: 10px 20px;
+  border: 1px solid #fff;
+}
+
+.element_button button::after{
+      content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+.element_button button:hover::after{
+    width: 100%;
+}
+.element_button a{
+    text-decoration: none;
+    color: #fff;
+}
 
 @media (max-width: 768px) {
 
@@ -300,6 +368,18 @@ video{
 .mapa{
     width: 80%;
 }
+  .frase {
+    grid-template-columns: 1fr;
+  }
+
+  .frase_element {
+    align-items: center;
+    text-align: center;
+}
+.element_img{
+    width: 100%;;
+}
+
 
 }
 
