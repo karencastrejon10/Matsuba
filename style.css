@@ -344,6 +344,42 @@ content: "";
     height: 250px;
     width: 100%;
 }
+.sec {
+    background-image: url(IMAGENES/imagen_2048x608px.png);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centro vertical */
+    align-items: center;       /* centro horizontal */
+    gap: 15px;                 /* separación entre título y botón */
+}
+
+.sec_title {
+    font-size: clamp(40px, 8vw, 65px);
+}
+
+.sec_btn {
+    background: rgba(0,0,0,.6);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.3);
+    padding: 14px 32px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.sec_btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+
 @media (max-width: 768px) {
 
     .nav_bar{
