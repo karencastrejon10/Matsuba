@@ -79,25 +79,27 @@
         </div>
         <br>
         <br>
-    </section> 
+    </section>
+    <!--SECCION RESERVACION--> 
     <section class="Reserva" id="reserva">
         <h2>Reserva ahora</h2>
         <br>
         <div class="reservacion_separar">
-        <form class="form-reseva">
+        <form id="formReserva" class="form-reseva">
        
             <div class="form-element">
                 <span class="material-icons">group</span>
-                <input type="number" min="1" max="20" placeholder="Numero personas" required>
+                <input id="personas" type="number" min="1" max="20" placeholder="Numero personas" required>
             </div>
                  <div class="form-element1">
-                <input type="date" required>
-                <input type="time">
+                <input id="fecha" type="date" required>
+                <input id="hora" type="time">
             </div>
             <div class="form-element1">
-                <button class="btn"><a href="#">Reserva tu mesa</a></button>
+                <button type="submit" class="btn">Reserva tu mesa</button>
             </div>
         </form>
+        <p id="mensaje"></p>
         </div>
         <br>
 
@@ -169,5 +171,6 @@
 </section>
 
     <script src="script.js"></script>
+    <script type="module" src="reservas.js"></script>
 </body>
 </html>
